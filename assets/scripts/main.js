@@ -19,6 +19,6 @@ class Sudoku extends HTMLElement {
     }
 }
 
-console.log(CONSTANT);
+// console.log(CONSTANT);
 
 customElements.define('sudoku-board', Sudoku);
