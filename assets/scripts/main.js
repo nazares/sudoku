@@ -1,3 +1,4 @@
+import { CONSTANT } from "./modules/constants.js";
 class Sudoku extends HTMLElement {
     constructor() {
         super();
@@ -17,5 +18,7 @@ class Sudoku extends HTMLElement {
 
     }
 }
+
+console.log(CONSTANT['BOX_SIZE']);
 
 customElements.define('sudoku-board', Sudoku);
