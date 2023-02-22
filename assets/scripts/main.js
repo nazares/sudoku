@@ -19,6 +19,4 @@ class Sudoku extends HTMLElement {
     }
 }
 
-console.log(CONSTANT['BOX_SIZE']);
-
 customElements.define('sudoku-board', Sudoku);
