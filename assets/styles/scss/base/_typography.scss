@@ -1,0 +1,8 @@
+@use '../abstracts' as *;
+
+@include font-face('Mitr', "assets/fonts/mitr/Mitr-ExtraLight", 200, null, ttf );
+@include font-face('Mitr', "assets/fonts/mitr/Mitr-Light", 300, null, ttf );
+@include font-face('Mitr', "assets/fonts/mitr/Mitr-Regular", 400, null, ttf );
+@include font-face('Mitr', "assets/fonts/mitr/Mitr-Medium", 500, null, ttf );
+@include font-face('Mitr', "assets/fonts/mitr/Mitr-SemiBold", 600, null, ttf );
+@include font-face('Mitr', "assets/fonts/mitr/Mitr-Bold", 700, null, ttf );

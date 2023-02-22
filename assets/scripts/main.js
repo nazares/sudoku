@@ -8,7 +8,7 @@ class Sudoku extends HTMLElement {
     }
     render() {
         this.shadow.innerHTML = `
-        <link rel="stylesheet" href="assets/styles/style.css">`;
+        <link rel="stylesheet" href="assets/styles/css/main.css">`;
         for (let i = 0; i <= 80; ++i) {
             this.divElement = document.createElement("div");
             this.divElement.classList.add("main-grid-cell");
