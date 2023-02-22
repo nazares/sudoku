@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { CONSTANT } from "/assets/scripts/modules/constant.js";
+=======
+import { CONSTANT } from "./modules/constants.js";
+>>>>>>> origin/main
 class Sudoku extends HTMLElement {
     constructor() {
         super();

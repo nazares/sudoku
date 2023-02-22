@@ -1,0 +1,19 @@
+:root {
+  --bg-main: hsl(216deg, 20%, 95%);
+  --bg-body: hsl(0deg, 0%, 100%);
+  --clr-txt: hsl(0deg, 0%, 0%);
+  --clr-whitel: hsl(0deg, 0%, 100%);
+  --clr-bluel: hsl(196deg, 100%, 47%);
+  --clr-redl: hsl(340deg, 82%, 52%);
+  --clr-blackl: hsl(0deg, 0%, 0%);
+  --filled-color: hsl(0deg, 0%, 0%);
+  --filled-bg: hsl(190deg, 77%, 88%);
+  --nav-size: 70px;
+  --sudoku-cell-size: 50px;
+  --border-radius: 10px;
+  --space-y: 20px;
+  --gap: 5px;
+  --size-nl: 1.5rem;
+  --size-lg: 2rem;
+  --size-xl: 3rem;
+}/*# sourceMappingURL=main.css.map */
