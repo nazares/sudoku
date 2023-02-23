@@ -9,7 +9,7 @@
   --filled-color: hsl(0deg, 0%, 0%);
   --filled-bg: hsl(190deg, 77%, 88%);
   --nav-size: 70px;
-  --sudoku-cell-size: 50px;
+  --sudoku-cell-size: 30px;
   --border-radius: 10px;
   --space-y: 20px;
   --gap: 5px;
@@ -20,31 +20,92 @@
 
 @font-face {
   font-family: "Mitr";
-  src: url("assets/fonts/mitr/Mitr-ExtraLight.ttf") format("truetype");
+  src: url("/assets/fonts/mitr/Mitr-ExtraLight.ttf") format("truetype");
   font-weight: 200;
 }
 @font-face {
   font-family: "Mitr";
-  src: url("assets/fonts/mitr/Mitr-Light.ttf") format("truetype");
+  src: url("/assets/fonts/mitr/Mitr-Light.ttf") format("truetype");
   font-weight: 300;
 }
 @font-face {
   font-family: "Mitr";
-  src: url("assets/fonts/mitr/Mitr-Regular.ttf") format("truetype");
+  src: url("/assets/fonts/mitr/Mitr-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: "Mitr";
-  src: url("assets/fonts/mitr/Mitr-Medium.ttf") format("truetype");
+  src: url("/assets/fonts/mitr/Mitr-Medium.ttf") format("truetype");
   font-weight: 500;
 }
 @font-face {
   font-family: "Mitr";
-  src: url("assets/fonts/mitr/Mitr-SemiBold.ttf") format("truetype");
+  src: url("/assets/fonts/mitr/Mitr-SemiBold.ttf") format("truetype");
   font-weight: 600;
 }
 @font-face {
   font-family: "Mitr";
-  src: url("assets/fonts/mitr/Mitr-Bold.ttf") format("truetype");
+  src: url("/assets/fonts/mitr/Mitr-Bold.ttf") format("truetype");
   font-weight: 700;
+}
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "Mitr", sans-serif;
+  background: var(--bg-body);
+}
+
+.nav {
+  background-color: var(--bg-body);
+  color: var(--color-txt);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-box-shadow: 5px 2px var(--bg-main);
+          box-shadow: 5px 2px var(--bg-main);
+  z-index: 99;
+}
+.nav__container {
+  max-width: 1280px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 40px;
+  height: var(--nav-size);
+}
+.nav__logo {
+  font-size: var(--size-lg);
+  color: var(--clr-clblue);
+}
+
+.dark-mode-toggle {
+  color: var(--clr-clblue);
+  cursor: pointer;
+}
+
+i.fa-sun {
+  display: none;
+}
+i.fa-moon {
+  display: inline-block;
+}
+
+.dark .fa-sun {
+  display: inline-block;
+}
+.dark .fa-moon {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
