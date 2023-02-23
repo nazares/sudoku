@@ -1,0 +1,51 @@
+body {
+    font-family: "Mitr", sans-serif;
+    background: var(--bg-body);
+}
+
+.nav {
+    background-color: var(--bg-body);
+    color: var(--color-txt);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 5px 2px var(--bg-main);
+    z-index: 99;
+    &__container {
+        max-width: 1280px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+        height: var(--nav-size);
+    }
+    &__logo {
+        font-size: var(--size-lg);
+        color: var(--clr-clblue);
+    }
+}
+
+.dark-mode-toggle {
+    color: var(--clr-clblue);
+    // font-size: var(--size-nl);
+    cursor: pointer;
+}
+
+i{
+&.fa-sun {
+    display: none;
+}
+&.fa-moon {
+    display: inline-block;
+}
+}
+
+.dark {
+    .fa-sun {
+        display: inline-block;
+    }
+    .fa-moon {
+        display: none;
+    }
+}
