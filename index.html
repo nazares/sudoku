@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#fff">
     <script type="module" src="assets/scripts/main.js"></script>
-    <!-- <link rel="stylesheet" href="assets/styles/css/main.css"> -->
+    <link rel="stylesheet" href="assets/styles/css/main.css">
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" href="icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -17,9 +17,10 @@
 </head>
 
 <body>
-    <nav>
-        <div class="nav-container">
-            <a href="#" class="nav-logo">
+    <!-- top nav -->
+    <nav class="nav">
+        <div class="nav__container">
+            <a href="#" class="nav__logo">
                 Sudoku
             </a>
             <div class="dark-mode-toggle" id="dark-mode-toggle">
@@ -28,7 +29,11 @@
             </div>
         </div>
     </nav>
+    <!-- end top nav -->
+
+    <!-- sudoku game -->
     <sudoku-board></sudoku-board>
+    <!-- end sudoku game -->
 </body>
 
 </html>
